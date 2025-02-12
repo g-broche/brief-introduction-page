@@ -1,5 +1,6 @@
 :root{
     --page-background: linear-gradient(0deg, rgb(34, 164, 215) 0%, rgb(25, 201, 255) 100%);
+    --main-background-color: #9bc33b;
     --font-title: 3rem;
     --font-size-bigger: 1.5rem;
     --font-size-standard: 1.125rem;
@@ -37,18 +38,21 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: var(--page-background);
+    background-image: url("./assets/backgrounds/desktop-1920x1080.webp");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 main{
+    margin-top: 50px;
     padding: 1.5rem 2rem;
     display:flex;
     flex-direction: column;
     gap:2rem;
     box-shadow: var(--box-border-shadow);
     border-radius: .5rem;
+    background-color: var(--main-background-color);
 }
 
 main>header{
@@ -63,7 +67,7 @@ section#informations{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap:2.5rem;
+    gap:2rem;
 }
 
 ul.list-reasons{
