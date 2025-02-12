@@ -1,5 +1,5 @@
 :root{
-    --page-background: lightblue;
+    --page-background: linear-gradient(0deg, rgb(34, 164, 215) 0%, rgb(25, 201, 255) 100%);
     --font-title: 3rem;
     --font-size-bigger: 1.5rem;
     --font-size-standard: 1.125rem;
@@ -7,6 +7,7 @@
 
     --link-icons-size: 64px;
     --link-icons-filler-background: white;
+    --link-icons-filler-active-background: rgb(83, 255, 218);
     --link-icons-border: 2px solid black;
 }
 
@@ -38,7 +39,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--page-background);
+    background: var(--page-background);
 }
 
 main{
@@ -47,6 +48,7 @@ main{
     flex-direction: column;
     gap:2rem;
     box-shadow: var(--box-border-shadow);
+    border-radius: .5rem;
 }
 
 main>header{
@@ -80,10 +82,6 @@ ul.list-links{
     gap:3rem;
 }
 
-ul.list-links a:hover{
-    cursor: pointer;
-}
-
 .image-wrapper.avatar-image-wrapper{
     height: 128px;
     width: 128px;
@@ -97,10 +95,19 @@ ul.list-links a:hover{
     border: 1px solid black;
     border-radius: 50%;
     background-color: var(--link-icons-filler-background);
+    transition: background-color .3s linear ;
 }
 
 .image-wrapper>img, img{
     object-fit: cover;
     width: 100%;
     max-height: 100%;
-} 
+}
+
+ul.list-links a:hover{
+    cursor: pointer;
+}
+
+ul.list-links a:hover .image-wrapper.link-icon-wrapper{
+    background-color: var(--link-icons-filler-active-background);
+}
