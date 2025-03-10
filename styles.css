@@ -132,7 +132,7 @@ ul.list-links a:hover .image-wrapper.link-icon-wrapper{
     background-color: var(--link-icons-filler-active-background);
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1600px) {
     body{
         background-image: var(--page-laptop-background-image);
         background-position-x: left;
