@@ -11,5 +11,5 @@ Page is up through github pages and [visible here](https://g-broche.github.io/br
     - Avatar image (img)
     - List of reasons to aim for this course (ul | ol)
     - Links to online profiles (ul & a)
-- 1 CSS rule per html tag
+- Excpected at least 1 CSS rule per html tag
 - No specific requirement in terms of visual design
